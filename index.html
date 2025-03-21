@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador FakeUser</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Gerador de FakeUsers</h1>
+    <div class="formUser ">
+      <span><b>Gênero:</b></span>
+      <div>
+        <input value="" type="radio" name="gender" checked /> Aleatório
+        <input value="male" type="radio" name="gender" /> Homem
+        <input value="female" type="radio" name="gender" /> Mulher
+      </div>
+
+      <span><b>Nacionalidade:</b></span>
+      <select id="natUsers">
+        <option value="br">Brasil</option>
+        <option value="mx">México</option>
+        <option value="es">Espanha</option>
+        <option value="us">Estados Unidos</option>
+        <option value="au">Australia</option>
+        <option value="ca">Canadá</option>
+        <option value="fi">Finlândia</option>
+        <option value="gb">Reino Unido</option>
+      </select>
+
+      <span><b>Quantidade:</b></span>
+      <select id="quantUsers">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        
+      </select>
+
+      <button onclick="generateFakerUsers()">Gerar Usuário</button>
+    </div>
+    <hr />
+
+    <div class="allUsers">
+      <div class="user">
+        <img
+          width="100"
+          src="https://randomuser.me/api/portraits/med/women/42.jpg"
+        />
+        <div class="info">
+          <span><b>Nome:</b> Henrique Neto</span>
+          <span><b>Email:</b> neto@gmail.com</span>
+          <span><b>Telefone:</b> 123456789</span>
+          <span><b>Pais:</b> Brasil </span>
+          <span><b>Estado:</b> Céara</span>
+          <span><b>Cidade:</b> Fortaleza</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+          <p>&copy; 2025 Criado por Hugo Davi.</p>
+          <ul class="footer-links">
+              <li><a href="#">Sobre</a></li>
+              <li><a href="https://github.com/HugoDavi777">GitHub</a></li>
+              <li><a href="#">Linkedin</a></li>
+          </ul>
+      </div>
+  </footer>
+    <script src="script.js"></script>
+
+  </body>
+</html>
